@@ -1,0 +1,125 @@
+<!--Lets gooo, cant guarantee if its top notch cuz am just learning-->
+
+<!--  so ye, lets start ig -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trident - The Official Programming Language for Demigods</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔱 Trident </h1>
+            <p>The official programming language for demigods of Olympus</p>
+        </header>
+
+        <!-- cade area -->
+        <div class="playground">
+            <div class="input-section">
+                <h3>🏛️ Write Your Code:</h3>
+                <textarea id="codeInput" placeholder="summon Poseidon
+    call Athena
+    call Athena
+    call Athena
+    print prophecy
+    offer drachma">
+</textarea>
+                
+                <button id="runButton" onclick="runPercyLang()">⚡ Execute Quest ⚡</button>
+                
+                <!-- example buttons -->
+                <div class="examples-section">
+                    <h4> Example Quests:</h4>
+                    <div class="example-buttons">
+                        <button class="example-btn" onclick="loadExample('counting')">Counting</button>
+                        <button class="example-btn" onclick="loadExample('multiplication')">Multiplication</button>
+                        <button class="example-btn" onclick="loadExample('loop')">Loop</button>
+                        <button class="example-btn" onclick="loadExample('heroes')">Heroes</button>
+                        <button class="example-btn" onclick="loadExample('functions')">Functions</button>
+                        <button class="example-btn" onclick="loadExample('conditionals')">Conditionals</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right side - where the output appears -->
+            <div class="output-section">
+                <h3>🔮 Oracle's Prophecy:</h3>
+                <!-- pre tag keeps formatting, shows program results -->
+                <pre id="output">The oracle awaits your quest...</pre>
+            </div>
+        </div>
+
+        <!-- help section showing all available commands -->
+        <div class="commands">
+            <h3>🛡️ Commands of the Gods:</h3>
+            <ul>
+                <li><code>summon Poseidon</code> - Start program (set value = 0)</li>
+                <li><code>offer drachma</code> - End program</li>
+  
+
+
+
+                <li><code>call Athena</code> - Increment value by 1</li>
+                <li><code>curse Hades</code> - Decrement value by 1</li>
+                <li><code>summon Minotaur</code> - Multiply value by 2</li>
+                <li><code>split hydra</code> - Divide value by 2</li>
+             
+                
+
+
+                <li><code>add N</code> - Add N to value</li>
+                <li><code>subtract N</code> - Subtract N from value</li>
+                <li><code>multiply by N</code> - Multiply value by N</li>
+                <li><code>divide by N</code> - Divide value by N</li>
+                
+                
+
+
+
+                <li><code>create hero NAME</code> - Create variable NAME with value 0</li>
+                <li><code>give hero NAME N</code> - Set variable NAME to number N</li>
+                <li><code>save hero NAME</code> - Store current value to variable NAME</li>
+                <li><code>use hero NAME</code> - Copy variable NAME to main value</li>
+                
+         
+                
+
+
+                <li><code>teach quest NAME</code> - Define function NAME</li>
+                <li><code>embark on NAME</code> - Call function NAME</li>
+                
+                
+
+
+                <li><code>if value equals N</code> - Execute block if value equals N</li>
+                <li><code>if value greater than N</code> - Execute block if value > N</li>
+                
+        
+                
+
+
+                <li><code>strike N times</code> - Loop next indented block N times</li>
+         
+                
+
+
+                <li><code>print prophecy</code> - Print current value</li>
+            </ul>
+        </div>
+
+        
+
+        <footer>
+            <p>⚔️ Forged by a demigod, for a demigod lol </p>
+            <p>May the gods take mercy on your code!</p>
+        </footer>
+    </div>
+
+    <!-- linking the javascript interpreter that makes everything work -->
+    <script src="script.js"></script>
+</body>
+</html>
